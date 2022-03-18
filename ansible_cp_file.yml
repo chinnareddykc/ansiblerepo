@@ -1,0 +1,12 @@
+---
+- name: my test playbook
+  hosts: all
+  become: yes
+
+  tasks: 
+  - name: playbook to install git pkg
+    copy:
+      src: /home/ansadmin/chinnafile
+      dest: /home/ansadmin/tstfile
+
+

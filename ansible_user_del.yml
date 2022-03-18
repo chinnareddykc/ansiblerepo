@@ -1,0 +1,11 @@
+---
+- name: my test playbook
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: playbook to create a user lavi
+    user: 
+      name: lavi
+      state: absent
+

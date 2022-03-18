@@ -1,0 +1,11 @@
+---
+- name: test playbook for git pkg
+  hosts: all
+  become: yes
+  tasks:
+  - name: this playbook to remove git
+    yum:
+      pkg: git*
+      state: absent
+       
+

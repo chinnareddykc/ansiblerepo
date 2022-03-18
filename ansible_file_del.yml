@@ -1,0 +1,11 @@
+---
+- name: this is my test playbook
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: this task to create a file
+    file:
+      path: /tmp/newfile
+      state: absent
+
